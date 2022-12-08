@@ -2,6 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 function Form(){
+
+    function handleAddTodo(e){
+        
+    }
+
     return (
         <form>
             <input

@@ -6,7 +6,7 @@ import List from "./list.jsx";
 
 
 const Home = () => {
-	const [todos, setTodos] = useState(["todo1", "todo2"])
+	const [todos, setTodos] = useState([{name:"todo1", complete: false}, {name:"todo2", complete: false}])
 	return (
 		<div className="text-center">
 			<List todos={todos} />

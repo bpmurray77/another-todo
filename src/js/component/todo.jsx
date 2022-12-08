@@ -4,6 +4,7 @@ function Todo({todo}){
     return(
         <div>
             {todo}
+            <button>Complete Task</button>
         </div>
     );
 };
