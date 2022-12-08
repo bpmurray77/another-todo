@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Todo from "./todo.jsx";
 
 function List({todos}) {
     return(
-        <div>
-            {todos}
-        </div>
+        todos.map(todo => {
+            return <Todo todo={todo} />
+        })
     );
 };
 
