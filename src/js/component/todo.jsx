@@ -1,10 +1,15 @@
 import React, {useState, useRef} from "react";
 
 function Todo({todo}){
+
+    function handleComplete() {
+        todo.removeChild(todo);
+    }
+
     return(
         <div>
             {todo}
-            <button>Complete Task</button>
+            <button onClick={handleComplete}>Complete Task</button>
         </div>
     );
 };
