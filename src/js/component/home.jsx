@@ -1,6 +1,7 @@
 import React, {useState, useRef} from "react";
 import ReactDOM from "react-dom";
 
+
 import List from "./list.jsx";
 
 
@@ -13,15 +14,15 @@ const Home = () => {
         e.preventDefault();
         const name = todoNameRef.current.value
         setTodos(prevTodos => {
-            return [prevTodos, {name:name, complete: false}]
+            return [...prevTodos, {name:name, complete: false}]
         })
         todoNameRef.current.value = null
     }
 
 	return (
 		<>
+		<List todos={todos} />
 		<div className="text-center">
-			<List todos={todos} />
 			<form>
             <input
             ref={todoNameRef}
