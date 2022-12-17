@@ -5,7 +5,7 @@ import Todo from "./todo.jsx";
 function List({todos}) {
     return(
         todos.map(todo => {
-            return <Todo key={todo.name} todo={todo.name} />
+            return <Todo todo={todo.name} />
         })
     );
 };
